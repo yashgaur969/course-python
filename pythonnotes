@@ -1,0 +1,179 @@
+Python Basics
+
+Variables - 
+Integers
+Floats
+String
+
+F string are same as backticks in js, in this we write f"hello, {name}" - it will get the value of name and replace in the string
+
+We can create a template string using format function in python eg - greeting = "hello, {}"    with_name = greeting.format("rolf"). with_name on printing will print hello rolf. But the f string method is more efficient. Format is basically used to embedd values in pytohn
+
+Input finction always gives you string
+
+To reduce the numbers after decimal use
+eg - x = 34.456788
+upto two decimal places print(f"two decimal places {x:.2f}")
+
+
+// read about number formatting in python
+
+List - []
+tuple - ()
+set - {} - order can change in the set, thatswhy sets does not allow subscript notation
+
+Advance set operations - difference function same as minus;, union same as add functionality, intersection gives which is present in both function
+
+
+eg = my_tuple = (14,) -> if single value tuple
+
+Booleans in python - 
+in keyword in python to check if something is present in the list,set etc or not.
+
+sum(arr) - it will sum the elements of the list
+
+
+List comprehensions in python
+num = [1,2,3]
+doublenum = [x * 2 for x in num]
+
+List comprehension is a good feature learn more about it
+
+Dictionaries = key value pair {key: val}
+
+Destructuring variables = 
+Read more about derstructuring variables
+
+pass - do nothing
+keyword argument and positional argument, keyword arguments are better they remove the confusion.
+
+Default parameter values in python
+If we return nothing then function return none.
+
+Lambda function does not have a name and is only used to return values
+
+
+learn about map function a bit
+
+Dictionary comprehension read a bit about it
+Used a lot while developing in python
+
+
+Unpacking function arguments
+
+def m(*args) -> what it will do is collect the args which we pass, that can be any number and then store them in the args as a tuple
+Basically * is used to spread or destructure the variables from any collecitons in python
+
+
+Unpacking keyword arguments
+
+**kwargs -> keyword arguments
+
+rewatch lec-32,33
+
+
+Object oriented programming in python
+
+	
+__str__ method - similar to init method this method is a magic method and is called when we want to display the details of our object in a string format similar to tostring method in java or cpp
+
+
+Class composition- it is a counterpart to inheritance that uses classes to build other classes. It is basically the HAS-A relationship between the classes
+
+Type Hinting: 
+def list_avg(sequence: list) -> float -  the parameter has a type of list and the return type is float
+
+
+Imports in python
+ from mymodule import function_name, when we import a file then the current file stops and all the things of the imported files are imported and something is there to print then it is printed.
+
+Relative imports in python - they should not be used as they are a bit confusing
+
+
+Errors in python - try and except block same as try and catch
+the order to execute is try->except->else->finally
+
+
+Custom error classes - user defined errors - just inherit from the built in errors and you can defined your own error class
+
+First class functions - passing function as arguments in the function
+
+
+Operator is a builtin module in python which has a itemgetter function read more about it
+
+
+Simple decorators in python
+
+The at syntax for decorators - in this learn about functools and functools.wraps(func) - informative lecture
+
+
+Decorating functions with parameters - just pass unlimited args and kwargs
+
+Decorators with parameters - informative video
+
+
+Mutability in python - integers, floats, strings, tuples, boolean etc are immutable in python
+
+Mutable default parameters - 
+
+
+What is an api - An API is a program that takes in some data and gives back some other data, usually after processing it.
+
+Http verbs - 
+
+What is  a web server - A piece of software design to accept incoming requests
+
+GET - retrieve something
+POST - receive data and use it
+Delete - remove something
+put - make sure something is there basically to update
+
+
+Rest principles - Its a way of thinking how a web server responds to a request
+The web servers responds with resources
+
+Another key feature of rest is that it is supposed to be stateless - means one request cannot depend on any other request
+
+JSON data always uses double quotes
+when we return jsonify data always it should be dictionary or a key value pair
+
+virtualenv - 
+
+Setting up venv 
+1 pip install virtualenv
+2 virtualenv venv --python=python3.5       #venv is the folder name
+3 source venv/bin/activate
+
+to stop using just write deactivate
+
+
+Resource is something similar to objects or classes. Lets say we apply some htpp requests to item or items then these two will become our resources
+
+Filter fnction returns a list of filtered object, so we can typecast and convert it into a list, or next which will return the first matched item from filter function
+
+Authentication and logging in
+
+JWT - jason web token which is basically to encode some data
+
+using the get method to access values of dictionary gives an advantage of setting the value to none passed as second argument if the key is not found in the dictionary
+
+identity function is unique to flask jwt which takes payload as argument and payload is the content of jwt extension
+
+
+JWT creates a new endpoint that is /auth
+
+when we execute a sqlite query using cursor and pass the parameters then they should always be in the form of tuple even if it is a single value it should be a tuple with single value
+
+
+Model - internal representation of entity basically it acts as a helper 
+resource - external representation of entity
+By doiig lazy=dynamic what we are doing is basically telling that it is just a reference and it will be executed whenever it is needed in a method
+
+
+
+
+
+
+
+
+

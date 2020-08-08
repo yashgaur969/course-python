@@ -1,0 +1,7 @@
+flask pros - custmozable, easy to get started, wsgi compatible(web server gateway interface)
+
+jinja is a template engine created by the creatore of flask
+
+The HTML | action Attribute is used to specify where the formdata is to be sent to the server after submission of the form. It can be used in the <form> element. 
+
+Message flashing in flask.
